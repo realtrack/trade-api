@@ -1,11 +1,11 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example.com
-  termsOfService: 'https://example.com/terms/'
+  title: Multitrade Softech Pvt. Ltd.
+  termsOfService: 'https://www.mtsp.co.in/terms/'
   contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
+    email: api@mtsp.co.in
+    url: 'https://www.mtsp.co.in/api'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
@@ -26,7 +26,7 @@ servers:
       tenant:
         default: www
         description: Your tenant id
-  - url: 'https://example.com/api/v1'
+  - url: 'https://www.mtsp.co.in/api/v1'
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
@@ -42,7 +42,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: 'http://example.com/api/oauth/dialog'
+          authorizationUrl: 'http://www.mtsp.co.in/api/oauth/dialog'
           scopes:
             'read:users': read users info
             'write:users': modify or remove users
