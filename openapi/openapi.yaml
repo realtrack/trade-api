@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Multitrade Softech Pvt. Ltd.
+  title: Multitrade's Rest Api
   termsOfService: 'https://www.mtsp.co.in/terms/'
   contact:
     email: api@mtsp.co.in
