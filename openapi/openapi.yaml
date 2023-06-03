@@ -5,7 +5,7 @@ info:
   termsOfService: 'https://www.mtsp.co.in/terms/'
   contact:
     email: api@mtsp.co.in
-    url: 'https://www.mtsp.co.in/api'
+    url: 'https://www.mtsp.co.in'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
@@ -21,12 +21,12 @@ tags:
   - name: Tag
     description: This is a tag description.
 servers:
-  - url: 'https://{tenant}/api/v1'
+  - url: 'https://{tenant}'
     variables:
       tenant:
-        default: www
+        default: wss1.mtsp.co.in:16107
         description: Your tenant id
-  - url: 'https://www.mtsp.co.in/api/v1'
+  - url: 'https://wss1.mtsp.co.in:16107'
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
